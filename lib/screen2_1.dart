@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Screen3 extends StatelessWidget {
+class Screen2_1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Screen 3"), centerTitle: true),
+      appBar: AppBar(title: Text("Screen 2_1"), centerTitle: true),
       backgroundColor: Colors.blue, // Arrière-plan bleu du Scaffold
       body: Container(
-        width: double.infinity,
-        color: Colors.white,
-        margin: const EdgeInsets.all(30.0),
-        child: GridView(
+        color: Colors.grey,
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          //physics :AlwaysScrollableScrollPhysics(),
           // Centrer les éléments verticalement
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-          ),
           children: <Widget>[
             Container(
               margin: EdgeInsets.all(20),
@@ -67,24 +65,12 @@ class Screen3 extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(20),
-              color: Colors.redAccent, // Couleur jaune
+              color: Colors.amberAccent, // Couleur jaune
               height: 150,
               width: 150,
               child: const Center(
                 child: Text(
-                  'Red Accent',
-                  style: TextStyle(color: Colors.black), // Texte noir
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(20),
-              color: Colors.lightGreen, // Couleur jaune
-              height: 150,
-              width: 150,
-              child: const Center(
-                child: Text(
-                  'Light Green',
+                  'Amber Accent',
                   style: TextStyle(color: Colors.black), // Texte noir
                 ),
               ),
@@ -96,19 +82,7 @@ class Screen3 extends StatelessWidget {
               width: 150,
               child: const Center(
                 child: Text(
-                  'Purpule',
-                  style: TextStyle(color: Colors.black), // Texte noir
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(20),
-              color: Colors.amberAccent, // Couleur jaune
-              height: 150,
-              width: 150,
-              child: const Center(
-                child: Text(
-                  'Amber Accent',
+                  'Purple',
                   style: TextStyle(color: Colors.black), // Texte noir
                 ),
               ),
